@@ -26,6 +26,6 @@ public class ForExamples {
                 max = array[j];
             }
         }
-        System.out.println("max: " + max);
+        System.out.println("max :" + max);
         }
     }
