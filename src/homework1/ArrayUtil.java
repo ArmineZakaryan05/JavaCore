@@ -94,8 +94,5 @@ public class ArrayUtil {
         for ( i = 9; i <=numbers.length; i++)
            // result = result + numbers [ i ];
         System.out.println("  " + result / numbers.length) ;
-
-
-
     }
 }
