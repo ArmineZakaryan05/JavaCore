@@ -12,6 +12,6 @@ public class VarArgs {
     public static void main(String[] args) {
         vaTest (10) ;
         vaTest (1, 2, 3) ;
-        vaTest () ;
+        vaTest ( ) ;
     }
 }

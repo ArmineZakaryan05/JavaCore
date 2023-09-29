@@ -28,6 +28,6 @@ static void vaTest (String msg, int ... v){
     public static void main(String[] args) {
         vaTest (1, 2, 3 );
         vaTest ("Проверка: ", 10, 20);
-        vaTest (true, false, false);
+        vaTest ( true, false, false);
     }
 }

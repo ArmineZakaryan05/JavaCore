@@ -15,6 +15,6 @@ public class PassArray {
         int n3[] = { };
         vaTest (n1);
         vaTest (n2);
-        vaTest (n3);
+        vaTest  (n3);
     }
 }

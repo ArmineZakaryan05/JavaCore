@@ -5,7 +5,7 @@ public class Outer {
 
         void test() {
             for (int i = 0; i < 10; i++) {
-                class Inner {
+                class  Inner {
                     void display() {
                         System.out.println("вывoд: outer_x = " + outer_x);
                     }
