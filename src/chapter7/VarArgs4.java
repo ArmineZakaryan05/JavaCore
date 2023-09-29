@@ -27,7 +27,7 @@ public class VarArgs4 {
 
         vaTest (1, 2, 3); // Верно!
         vaTest (true,false, false);  // Верно!
-        vaTest ();  // Ошибка: неоднозначность!
+        vaTest (1);  // Ошибка: неоднозначность!
     }
 }
 
