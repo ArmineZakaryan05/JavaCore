@@ -1,4 +1,4 @@
-package chapter6;
+package homework1.bracechecker;
 
 public class Stack {
     int stack[] = new int[10];
