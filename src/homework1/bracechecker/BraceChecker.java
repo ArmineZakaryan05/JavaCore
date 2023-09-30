@@ -48,5 +48,9 @@ public class BraceChecker {
                     break;
             }
         }
+        char last;
+        while ((last = (char) stack.pop()) != 0){
+            System.err.println("error :  opened " + last  + " but not closed " );
+        }
     }
 }
