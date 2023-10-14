@@ -43,9 +43,6 @@ class EmployeeStorage {
     }
 
 
-
-
-
     private void extend(){
         Employee[] tmp = new Employee[ employees.length + 10];
         System.arraycopy(employees,0, tmp, 0, employees.length);
