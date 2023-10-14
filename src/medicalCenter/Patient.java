@@ -1,7 +1,7 @@
 package medicalCenter;
 
 public class Patient {
-    private  String id;
+    private String id;
     private String name;
     private String surname;
     private String phone;

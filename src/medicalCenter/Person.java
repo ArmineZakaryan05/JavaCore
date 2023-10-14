@@ -50,11 +50,10 @@ public class Person {
     private static void searchDoctorByProfession() {
         System.out.println("Please input doctor profession ");
         String doctorProfession = scanner.nextLine();
-        Doctor byProfession  = doctorStorage.getByProfession(doctorProfession);
-        if(byProfession == null){
+        Doctor byProfession = doctorStorage.getByProfession(doctorProfession);
+        if (byProfession == null) {
             System.out.println("doctor does not exists");
-        }
-        else {
+        } else {
             System.out.println(byProfession);
         }
     }
