@@ -2,7 +2,7 @@ package medicalCenter;
 
 import java.util.Scanner;
 
-public class Person {
+public class MedicalCentermain {
 
     private static Scanner scanner = new Scanner(System.in);
     private static DoctorStorage doctorStorage = new DoctorStorage();
