@@ -1,4 +1,4 @@
-package bookchapter.chapter1;
+package bookchapter.chapter2;
 
 public class ForTest {
 
