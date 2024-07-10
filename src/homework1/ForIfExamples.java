@@ -2,8 +2,8 @@ package homework1;
 
 public class ForIfExamples {
     public static void main(String[] args) {
-        int x;
-        for (x = 1; x < 11; x++) {
+
+        for (int x = 1; x < 11; x++) {
             System.out.print(" " + x);
         }
         System.out.println();
@@ -19,16 +19,14 @@ public class ForIfExamples {
         System.out.println();
 
 
-        int y;
-        for (y = 50; y > 0; y--) {
+        for (int y = 50; y > 0; y--) {
             System.out.print(" " + y);
         }
         System.out.println();
         System.out.println();
 
 
-        int z;
-        for (z = 1; z < 20; z = z + 2) {
+        for (int z = 1; z < 20; z = z + 2) {
             System.out.print(" " + z);
         }
         System.out.println();
