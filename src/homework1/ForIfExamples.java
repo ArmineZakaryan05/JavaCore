@@ -3,8 +3,8 @@ package homework1;
 public class ForIfExamples {
     public static void main(String[] args) {
 
-        for (int x = 1; x < 11; x++) {
-            System.out.print(" " + x);
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + 1 + " ");
         }
         System.out.println();
         System.out.println();
@@ -16,28 +16,27 @@ public class ForIfExamples {
         }
         System.out.println(sum);
         System.out.println();
-        System.out.println();
 
 
-        for (int y = 50; y > 0; y--) {
-            System.out.print(" " + y);
+        for (int i = 50; i > 0; i--) {
+            System.out.print(i + " ");
+
         }
         System.out.println();
         System.out.println();
 
 
-        for (int z = 1; z < 20; z = z + 2) {
-            System.out.print(" " + z);
+        for (int i = 1; i < 20; i = i + 2) {
+            System.out.print(i + " ");
         }
         System.out.println();
         System.out.println();
 
 
         int count = 0;
-        for (int a = 2; a < 100; a = a + 2) {
-            count = count + 1;
+        for (int i = 2; i < 101; i = i + 2) {
+            count++;
         }
-        System.out.println(" " + count);
-
+        System.out.println(count + " ");
     }
 }
