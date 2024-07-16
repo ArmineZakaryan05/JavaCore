@@ -56,7 +56,7 @@ public class ArrayUtil {
         //ex.8
         int count1 = 0;
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 != 0) { // Եթե թիվը կենտ է
+            if (numbers[i] % 2 != 0) {
                 count1++;
             }
         }
