@@ -18,8 +18,7 @@ public class ArrayUtil {
         System.out.println(numbers[length - 1]);
 
         //ex.4
-        System.out.println(numbers.length + " ");
-
+        System.out.println(numbers.length);
 
         //ex.5
         int min = numbers[0];
