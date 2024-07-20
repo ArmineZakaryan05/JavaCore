@@ -28,38 +28,37 @@ public class ArrayUtil {
             }
         }
         System.out.println(min);
+        System.out.println();
 
         // ex.6
         if (numbers.length <= 2) {
             System.out.println("Can't print middle values");
-            return;
+        } else {
+            if (numbers.length % 2 == 0) {
+                System.out.print(numbers[(numbers.length / 2) - 1]);
+            } else {
+                System.out.print(numbers[(numbers.length / 2)]);
+            }
         }
-        int mid = numbers.length / 2;
-        if (numbers.length % 2 != 0) {
-            System.out.println(numbers[mid]);
-        }
-        if (numbers.length % 2 == 0) {
-            System.out.println(numbers[mid - 1] + " " + numbers[mid]);
-        }
+        System.out.println();
 
         //ex.7
-        int count = 0;
+        int oddCount = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 0) {
-                count++;
+                oddCount++;
             }
         }
-        System.out.println(count);
-
+        System.out.println(oddCount);
 
         //ex.8
-        int count1 = 0;
+        int evenCount = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 != 0) {
-                count1++;
+                evenCount++;
             }
         }
-        System.out.println(count1);
+        System.out.println(evenCount);
 
         //ex.9
         int sum = 0;
@@ -68,13 +67,8 @@ public class ArrayUtil {
         }
         System.out.println(sum);
 
-        //ex.10
-        int result = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            result += numbers[i];
-
-        }
-        System.out.println(result / numbers.length);
+        //10
+        System.out.println(sum / numbers.length);
     }
 }
 
