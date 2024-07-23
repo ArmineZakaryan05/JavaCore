@@ -4,6 +4,7 @@ public class ArrayExample {
     public static void main(String[] args) {
 
         int[] numbers = {3, 55, 43, 1, 8, 9, 6, 33, 6};
+
 //int length = numbers.length;
 //        System.out.println(numbers[length-1]);
 
