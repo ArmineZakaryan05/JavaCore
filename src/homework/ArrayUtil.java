@@ -1,4 +1,4 @@
-package homework1;
+package homework;
 
 public class ArrayUtil {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class ArrayUtil {
 
         // ex.6
         if (numbers.length <= 2) {
-            System.out.println("Can't print middle values");
+            System.err.println("Can't print middle values");
         } else {
             if (numbers.length % 2 == 0) {
                 System.out.print(numbers[(numbers.length / 2) - 1]);

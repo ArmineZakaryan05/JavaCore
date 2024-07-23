@@ -1,4 +1,4 @@
-package homework1;
+package homework;
 
 public class ForIfExamples {
     public static void main(String[] args) {
