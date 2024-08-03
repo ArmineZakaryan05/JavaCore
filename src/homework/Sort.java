@@ -12,7 +12,6 @@ public class Sort {
                     array[j] = temp;
                 }
             }
-
         }
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
