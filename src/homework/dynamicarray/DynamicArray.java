@@ -92,7 +92,6 @@ public class DynamicArray {
             if (array[i] == value) {
                 return true;
             }
-
         }
         return false;
     }
