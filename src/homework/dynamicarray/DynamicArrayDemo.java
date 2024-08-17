@@ -25,5 +25,7 @@ public class DynamicArrayDemo {
         System.out.println(dy.exists(87));
         System.out.println(dy.exists(78));
         System.out.println(dy.getIndexByValue(0));
+
+
     }
 }

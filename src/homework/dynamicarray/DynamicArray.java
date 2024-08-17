@@ -3,7 +3,15 @@ package homework.dynamicarray;
 public class DynamicArray {
 
     //սա մեր հիմնական մասիվն է, որտեղ պահելու ենք ավելացվող էլեմենտները
-    private int[] array = new int[10];
+    private int[] array;
+
+    DynamicArray() {
+        array = new int[10];
+    }
+
+    DynamicArray(int length) {
+        array = new int[length];
+    }
 
     //սա մեր մասիվի մեջ ավելացված էլեմենտների քանակն է
     private int size = 0;
