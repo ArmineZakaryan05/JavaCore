@@ -9,6 +9,7 @@ public class DynamicArray {
         array = new int[10];
     }
 
+
     DynamicArray(int length) {
         array = new int[length];
     }
