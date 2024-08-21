@@ -1,5 +1,7 @@
 package bookchapter.chapter7;
 
+import bookchapter.chapter7.Stack;
+
 public class TestStack {
     public static void main(String[] args) {
 

@@ -1,5 +1,6 @@
 package bookchapter.chapter7;
 
+
 public class RetOb {
     public static void main(String[] args) {
         Test1 ob1 = new Test1(2);

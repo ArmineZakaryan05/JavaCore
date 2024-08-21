@@ -1,5 +1,7 @@
 package bookchapter.chapter7;
 
+import bookchapter.chapter7.Test;
+
 public class PassObjRef {
     public static void main(String[] args) {
         Test ob = new Test(15, 20);

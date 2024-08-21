@@ -1,5 +1,7 @@
 package bookchapter.chapter7;
 
+import bookchapter.chapter7.Test2;
+
 public class AccessTest {
     public static void main(String[] args) {
         Test2 ob = new Test2();

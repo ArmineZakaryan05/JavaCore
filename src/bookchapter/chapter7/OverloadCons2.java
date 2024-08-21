@@ -1,5 +1,7 @@
 package bookchapter.chapter7;
 
+import bookchapter.chapter7.Box;
+
 public class OverloadCons2 {
     public static void main(String[] args) {
         Box myBox1 = new Box(10, 20, 30);
