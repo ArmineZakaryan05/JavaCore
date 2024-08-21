@@ -1,4 +1,4 @@
-package bookchapter.classwork;
+package classwork;
 
 public class ArgsExample {
 

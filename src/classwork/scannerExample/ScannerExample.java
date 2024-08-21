@@ -1,4 +1,4 @@
-package bookchapter.classwork.scannerExample;
+package classwork.scannerExample;
 
 import java.util.Scanner;
 

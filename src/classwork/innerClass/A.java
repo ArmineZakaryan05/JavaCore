@@ -1,4 +1,4 @@
-package bookchapter.classwork.innerClass;
+package classwork.innerClass;
 
 public class A {
     int x = 5;

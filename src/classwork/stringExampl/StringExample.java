@@ -1,4 +1,4 @@
-package bookchapter.classwork.stringExampl;
+package classwork.stringExampl;
 
 public class StringExample {
 

@@ -1,4 +1,4 @@
-package bookchapter.classwork.staticExample;
+package classwork.staticExample;
 
 public class BoxExample {
     public static void main(String[] args) {

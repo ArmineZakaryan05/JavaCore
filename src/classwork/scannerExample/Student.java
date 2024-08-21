@@ -1,4 +1,4 @@
-package bookchapter.classwork.scannerExample;
+package classwork.scannerExample;
 
 public class Student {
 
