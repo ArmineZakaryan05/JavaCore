@@ -11,46 +11,89 @@ public class ArrayHomework {
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.println("count: " + count);
         System.out.println();
 
         //ex.2
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.print(numbers[i] + " ");
+        //option1
+//        System.out.println();
+//        int[] reversedArray = new int[numbers.length];
+//        int j = 0;
+//        for (int i = numbers.length - 1; i >= 0; i--) {
+//            reversedArray[j++] = numbers[i];
+//        }
+//        for (int x : reversedArray) {
+//            System.out.print(x + " ");
+//        }
+//        System.out.println();
+//        System.out.println();
+        //option2
+        int startIndex = 0;
+        int endIndex = numbers.length - 1;
+
+        /*for (int i = 0; i < numbers.length / 2; i++) {
+            int tmp = numbers[i];
+            numbers[i] = numbers[endIndex];
+            numbers[endIndex--] = tmp;
+        }*/
+        //option3
+        while (startIndex < endIndex) {
+            int tmp = numbers[startIndex];
+            numbers[startIndex] = numbers[endIndex];
+            numbers[endIndex] = tmp;
+            startIndex++;
+            endIndex--;
+        }
+        for (int x : numbers) {
+            System.out.print(x + " ");
         }
         System.out.println();
         System.out.println();
+
 
         //ex.3
         int duplicateCount = 0;
+        int[] duplicateNumbers = new int[numbers.length];
+        int duplicateNumbersIndex = 0;
         for (int i = 0; i < numbers.length; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
-                if (numbers[i] == numbers[j]) {
-                    duplicateCount++;
-                    break;
+            for (int a = i + 1; a < numbers.length; a++) {
+                if (numbers[i] == numbers[a]) {
+                    boolean existDuplicate = false;
+                    for (int x : duplicateNumbers) {
+                        if (numbers[i] == x) {
+                            existDuplicate = true;
+                            break;
+                        }
+                    }
+                    if (!existDuplicate) {
+                        duplicateCount++;
+                        duplicateNumbers[duplicateNumbersIndex++] = numbers[i];
+                        break;
+                    }
                 }
             }
         }
-        System.out.println(duplicateCount);
+        System.out.println("duplicateCount: " + duplicateCount);
         System.out.println();
+
 
         //ex.4
         char[] chars = {'բ', 'ա', 'ր', 'և', 'ա', 'շ', 'խ', 'ա', 'ր', 'հ'};
-        char[] vowels = {'ա', 'ե', 'է', 'ը', 'ի', 'յ', 'ո', 'օ'};
-        int count1 = 0;
+        char[] vowels = {'ա', 'ե', 'է', 'ը', 'ի', 'ո', 'օ'};
+        int vowelsCount = 0;
         for (char c : chars) {
             for (char vowel : vowels) {
                 if (c == vowel) {
-                    count1++;
+                    vowelsCount++;
                     break;
                 }
             }
         }
-        System.out.println(count1);
+        System.out.println("vowelsCount: " + vowelsCount);
 
 
 //        String text = "բարևաշխարհ";
-//        String vowels = "աեէըիյոուօ";
+//        String vowels = "աեէըիոուօ";
 //        int count1 = 0;
 //        for (int i = 0; i < text.length(); i++) {
 //            char c = text.charAt(i);

@@ -18,24 +18,26 @@ public class BraceChecker {
                 case '[':
                 case '(':
                     stack.push(c);
+
                     break;
                 case '}':
                 case ']':
                 case ')':
                     if (stack.tos < 0) {
-                        System.err.println("Error: closed " + c + i + " but not opened.");
+                        System.err.println("Error: closed " + c + " at position " + i + " but not opened.");
                         break;
                     }
                     char top = (char) stack.pop();
                     if ((c == '}' && top != '{') ||
                             (c == ']' && top != '[') ||
                             (c == ')' && top != '(')) {
-                        System.err.println("Error: opened " + top + " but  " + c + " " + i);
+                        System.err.println("Error: opened " + top + " but closed " + c + " " + i);
                     } else {
                         System.out.println("Opened " + top + " and closed " + c + " " + i);
                     }
                     break;
             }
         }
+
     }
 }

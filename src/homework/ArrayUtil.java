@@ -71,4 +71,3 @@ public class ArrayUtil {
         System.out.println(sum / numbers.length);
     }
 }
-

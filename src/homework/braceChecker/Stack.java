@@ -10,7 +10,7 @@ public class Stack {
     }
 
       void push(int item) {
-        if (tos == 9) {
+        if (tos == array.length-1) {
             System.out.println("Stack is full.");
         } else {
             array[++tos] = item;
@@ -20,7 +20,7 @@ public class Stack {
     int pop() {
         if (tos < 0) {
             System.out.println("Stack underflow.");
-            return 0;
+            return -1;
         } else {
             return array[tos--];
         }
