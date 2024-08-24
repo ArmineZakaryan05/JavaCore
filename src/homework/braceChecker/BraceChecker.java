@@ -6,38 +6,78 @@ public class BraceChecker {
     private String text;
 
     public BraceChecker(String text) {
+        if (text == null) {
+            System.out.println("Text cannot be null");
+        }
         this.text = text;
     }
 
+    public BraceChecker() {
+
+    }
+
     public void check() {
-        Stack stack = new Stack();
+        Stack myStack = new Stack();
+
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
+            char last;
             switch (c) {
                 case '{':
                 case '[':
                 case '(':
-                    stack.push(c);
-
+                    myStack.push(new Brace(c, i));
                     break;
+
                 case '}':
-                case ']':
-                case ')':
-                    if (stack.tos < 0) {
-                        System.err.println("Error: closed " + c + " at position " + i + " but not opened.");
-                        break;
-                    }
-                    char top = (char) stack.pop();
-                    if ((c == '}' && top != '{') ||
-                            (c == ']' && top != '[') ||
-                            (c == ')' && top != '(')) {
-                        System.err.println("Error: opened " + top + " but closed " + c + " " + i);
+                    Brace pop = myStack.pop();
+                    if (pop == null) {
+                        System.err.println("Error: Closed " + c + "  but not opened at  " + " " + i);
                     } else {
-                        System.out.println("Opened " + top + " and closed " + c + " " + i);
+                        char brace = pop.brace;
+                        int index = pop.index;
+                        if (brace != '{') {
+                            System.err.println("Error: Closed " + c + " but opened " + " " + brace + " at  " + " " + index);
+                        }
+                    }
+                    break;
+                case ']':
+                    pop = myStack.pop();
+                    if (pop == null) {
+                        System.err.println("Error: Closed " + " " + c + " " + " but not opened at " + i);
+                    } else {
+                        char brace = pop.brace;
+                        int index = pop.index;
+                        if (brace != '[') {
+                            System.err.println("Error: Closed " + " " + c + " " + " but opened " + brace + " " + " at " + index);
+                        }
+                    }
+                    break;
+                case ')':
+                    pop = myStack.pop();
+                    if (pop == null) {
+                        System.err.println("Error: Closed " + " " + c + " " + " but not opened at " + " " + i);
+                    } else {
+                        char brace = pop.brace;
+                        int index = pop.index;
+                        if (brace != '(') {
+                            System.err.println("Error: Closed " + " " + c + " " + " but opened " + " " + brace + " " + " at " + index);
+                        }
                     }
                     break;
             }
-        }
 
+        }
+//        int last;
+//        while ((last = myStack.pop()) != 0) {
+//            System.err.println("Error: Opened " + " " + (char) last + " " + "but not closed.");
+//        }
+        while (!myStack.isEmpty()) {
+            Brace brace = myStack.pop();
+            System.err.println("Error: Opened " + " " + brace.brace + " " + brace.index + " " + "but not closed.");
+        }
+    }
+
+    public void text(String s) {
     }
 }
