@@ -1,4 +1,4 @@
-package classwork.bookSrorage;
+package homework.bookStorage;
 
 import java.util.Scanner;
 
