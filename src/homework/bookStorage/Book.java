@@ -1,9 +1,8 @@
-package classwork.bookSrorage;
+package homework.bookStorage;
 
 import java.util.Objects;
 
 public class Book {
-
     private String id;
     private String title;
     private String authorName;
