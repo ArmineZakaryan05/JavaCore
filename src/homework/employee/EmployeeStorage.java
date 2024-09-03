@@ -36,7 +36,7 @@ public class EmployeeStorage {
 
     public void searchEmployeeByEmployeeId(String id) {
         for (int i = 0; i < size; i++) {
-            if (employees[i].getEmployeeId().contains(id)) {
+            if (employees[i].getEmployeeId().equals(id)) {
                 System.out.println(employees[i]);
             }
         }
