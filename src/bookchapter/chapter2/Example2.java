@@ -4,6 +4,7 @@ package bookchapter.chapter2;
 Call this file "Example2.java".
  */
 public class Example2 {
+
     public static void main(String[] args) {
         int num;     //this declares a variable called num
         num = 100;  //this assigns num the value 100
