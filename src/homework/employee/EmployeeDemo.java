@@ -57,6 +57,11 @@ public class EmployeeDemo implements Commands {
     private static void addEmployee() {
         System.out.println("Please input employeeId.");
         String employeeId = scanner.nextLine();
+        Employee employeeById = employeeStorage.getEmployeeById(employeeId);
+        if (employeeById != null) {
+            System.err.println("Employee with " + employeeId + " id already exists!");
+            return;
+        }
         System.out.println("Please input employee name.");
         String name = scanner.nextLine();
         System.out.println("Please input employee surname.");
@@ -68,13 +73,9 @@ public class EmployeeDemo implements Commands {
         System.out.println("Please input employee position.");
         String position = scanner.nextLine();
         Employee employee = new Employee(employeeId, name, surname, salary, company, position);
-        Employee employeeById = employeeStorage.getEmployeeById(employeeId);
-        if (employeeById == null) {
-            employeeStorage.add(employee);
-            System.out.println("Employee added!");
-        } else {
-            System.err.println("Employee with " + employeeId + " id already exists!");
-        }
-
+        employeeStorage.add(employee);
+        System.out.println("Employee added!");
     }
+
+
 }
