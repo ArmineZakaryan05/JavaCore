@@ -1,4 +1,4 @@
-package bookchapter.chapter2;
+package bookChapter.chapter2;
 
 /* Here is another short example
 Call this file "Example2.java".

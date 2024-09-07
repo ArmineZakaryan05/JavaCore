@@ -1,4 +1,4 @@
-package bookchapter.chapter2;
+package bookChapter.chapter2;
 
 //Demonstrate the if.
 
